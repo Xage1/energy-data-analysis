@@ -25,6 +25,15 @@ This project demonstrates energy consumption forecasting using three different t
 
 The system helps telecom operators predict energy needs for base stations and data centers, enabling better capacity planning and cost optimization.
 
+## API Integration Features
+
+### Supported Data Sources
+| API | Description | Authentication | Sample Config |
+|-----|-------------|----------------|---------------|
+| [EnergyData API](https://energydata.example.com) | Real-time grid data | API Key | `config.yaml` |
+| [OpenWeatherMap](https://openweathermap.org/api) | Weather impact analysis | OAuth | `weather_config.yaml` |
+| [Smart Meter API](https://developer.smartmeter.com) | Device-level consumption | JWT Token | `meter_config.yaml` |
+
 ## Features
 
 - Data preprocessing and feature engineering pipeline
