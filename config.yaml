@@ -1,0 +1,23 @@
+data:
+  raw_path: "data/raw/energy_data.csv"
+  processed_path: "data/processed/cleaned_energy_data.csv"
+  
+features:
+  timestamp_col: "timestamp"
+  target_col: "energy_consumption"
+  time_features: ["hour", "day_of_week", "month"]
+  
+models:
+  arima_order: (2, 1, 2)
+  prophet_params:
+    growth: "linear"
+    seasonality_mode: "multiplicative"
+  lstm_params:
+    input_size: 1
+    hidden_size: 50
+    num_layers: 2
+    output_size: 1
+    
+evaluation:
+  test_size: 0.2
+  metrics: ["mae", "rmse", "mape"]
