@@ -24,4 +24,4 @@ CREATE TABLE model_predictions (
 
 CREATE INDEX idx_energy_timestamp ON energy_consumption (timestamp);
 CREATE INDEX idx_energy_zone ON energy_consumption (zone);
-CREATE INDEX idx+predictions_model ON model_predictions(model_name);
+CREATE INDEX idx_predictions_model ON model_predictions(model_name);

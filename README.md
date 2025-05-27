@@ -67,17 +67,14 @@ python gen_sample_data.py
 
 2. **Process the data**:
 
-bash
 python src/data_processing.py
 
 3. **Train models and evaluate**:
 
-bash
 python src/modeling.py
 
 4. **Launch the dashboard**:
 
-bash
 streamlit run src/app.py
 
 5. **Project Structure**
